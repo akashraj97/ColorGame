@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Color Game</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="x.js" type="text/javascript"></script>
+
+		<style>
+			#heading{
+				background-color: rgb(0, 110, 255);
+				position: sticky;
+			}
+			body{
+				background-color: rgb(28, 24, 24);
+				padding: 0%;
+				margin: 0%;
+			}
+			.container{
+				width: 70%;
+				height: 500px;
+				background: rgb(60, 58, 58);
+				margin: auto;
+				position: relative;
+				border-radius: 3%;
+				display: -ms-grid;
+			}
+			.cb{
+				height: 45%;
+				width: 30%;
+				margin: 1.2%;
+				border-radius: 10%	;
+				border: 2px black solid;
+				transition-property: transform;
+				transition-duration: 150ms;
+				float: left;
+				transition-timing-function: ease-in-out;
+			}
+			.cb:hover{
+				transform: scale(1.07);
+			}
+			h4,h3{
+				text-align: center;
+				font-size: 50px;
+				color: wheat;
+				margin: 3px;
+			}
+			#q{
+				text-align: center;
+				font-size: 60px;
+				color: wheat;
+				margin: 3px;
+			}
+			@media(max-width:630px){
+				.container{
+					width: 90%;
+				}
+				.cb{
+					width: 45%;
+					height: 30%;
+					margin: 1.5%;
+				}
+				h4,h3{
+					font-size: 30px;
+				}
+				#q{
+					font-size: 40px;
+				}
+			}
+		</style>
+	</head>
+
+	<body onload="change_color()">
+		<div id="heading">
+			<h4>The Color Game</h4>
+			<h1 id="q"></h1>
+			<h3> Select the correct color pallete</h3>
+		</div>
+		<caption></div>
+		<div class="container">
+			<h1 class="cb"></h1>
+			<h1 class="cb"></h1>
+			<h1 class="cb"></h1>
+			<h1 class="cb"></h1>
+			<h1 class="cb"></h1>
+			<h1 class="cb"></h1>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,12 @@
+.square{
+	background: rgb(36, 157, 228);
+	width: 30%;
+	height: 30%;
+	margin: 1.66%;
+	float: left;
+}
+.container{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+}
